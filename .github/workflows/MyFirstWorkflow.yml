@@ -12,7 +12,7 @@ jobs:
     steps:
       - run: |
           echo "Hello ${{ vars.WHO_TO_GREET }} from ${{ github.actor }}"
-          ech "My secret is ${{ secrets.MY_SECRET }}."
+          echo "My secret is ${{ secrets.MY_SECRET }}."
           echo "Active branch is ${{ github.ref }}"
       - name: Checkout
         uses: actions/checkout@v4.2.2
