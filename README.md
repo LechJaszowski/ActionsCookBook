@@ -6,4 +6,4 @@ It uses HTML5 and CSS3.
 * List of daily tasks
 * Tasks already done
 
-License: MIT
+License: MIT @ 2025
