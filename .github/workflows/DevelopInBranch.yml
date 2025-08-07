@@ -13,5 +13,10 @@ jobs:
             echo "Przepływ pracy wyzwolony przez zdarzenie '${{ github.event_name }}'"        
             echo "Przepływ pracy wyzwolony przez aktora '${{ github.actor }}'"
             echo "Tytuł pull requesta to '${{ github.event.pull_request.title }}'"
+      - run: |
+            echo "::debug::To jest komunikat debugowania"
+            echo "::notice::To jest komunikat powiadomienia"
+            echo "::warning::To jest komunikat ostrzegawczy"
+            echo "::error::To jest komunikat o błędzie"
       - uses: actions/checkout@v4.2.2
       - uses: devops-actions/actionlint@v0.1.9
