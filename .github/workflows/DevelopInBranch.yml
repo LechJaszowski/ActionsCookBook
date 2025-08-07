@@ -18,5 +18,9 @@ jobs:
             echo "::notice::To jest komunikat powiadomienia"
             echo "::warning::To jest komunikat ostrzegawczy"
             echo "::error::To jest komunikat o błędzie"
+      - run: |
+            echo "::notice file=.github/workflows/DevelopInBranch.yml,line=17::Istnieje komunikat debugowania, który nie jest zawsze widoczny!"
+            echo "::warning file=.github/workflows/DevelopInBranch.yml,line=17,endline=19::Mnóstwo komunikatów"
+            echo "::error title=Script Injection, file=.github/workflows/DevelopInBranch.yml,line=15::Potencjalne wstrzyknięcie skryptu"
       - uses: actions/checkout@v4.2.2
       - uses: devops-actions/actionlint@v0.1.9
